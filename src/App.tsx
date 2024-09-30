@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 
 import Navbar from "./components/navbar/Navbar";
-<<<<<<< Updated upstream
-import { Button } from "./components/Button/Button";
-=======
-import HomePage from "./pages/HomePage/HomePage";
-import UsersPage from "./pages/UsersPage/UsersPage";
-import BadgesPage from "./pages/BadgesPage/BadgesPage";
-import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
->>>>>>> Stashed changes
+import { Button } from "./components/button/Button";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -38,7 +32,6 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
-<<<<<<< Updated upstream
       <div className="container d-flex justify-content-center">
         <div className="card bg-white shadow text-center p-4 m-4">
           <h1>Counter: {count}</h1>
@@ -56,15 +49,6 @@ function App() {
           </div>
         </div>
       </div>
-=======
-      <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="home" element={<HomePage />} />
-        <Route path="users" element={<UsersPage />} />
-        <Route path="badges" element={<BadgesPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
->>>>>>> Stashed changes
     </div>
   );
 }

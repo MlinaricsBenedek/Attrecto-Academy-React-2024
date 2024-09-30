@@ -7,7 +7,7 @@ interface ButtonProps {
   children: React.ReactNode;
   className?: string;
 }
-//A button osztály túltötése
+
 export const Button = ({
   color,
   children,
@@ -30,9 +30,5 @@ export const Button = ({
       {children}
     </button>
   );
-<<<<<<< Updated upstream
 };
 
-=======
-};
->>>>>>> Stashed changes
