@@ -1,8 +1,7 @@
 import classNames from "classnames";
 import React from "react";
-
-interface ButtonProps {
-  onClick?: () => void;
+import { ButtonHTMLAttributes } from "react";
+interface ButtonProps extends ButtonHTMLAttributes {
   color?: "primary" | "secondary" | "danger";
   children: React.ReactNode;
   className?: string;
@@ -12,7 +11,7 @@ export const Button = ({
   color,
   children,
   className,
-  onClick,
+  
 }: ButtonProps) => {
   return (
     <button
@@ -25,7 +24,7 @@ export const Button = ({
         },
         className
       )}
-      onClick={onClick}
+      
     >
       {children}
     </button>

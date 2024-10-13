@@ -19,6 +19,7 @@ function App() {
         <Route path="users" element={<UsersPage />} />
         <Route path="user/:id" element={<UserPage />} />
         <Route path="badges" element={<BadgesPage />} />
+        <Route path="user" element={<UserPage/>}/>
       </Routes>
     </div>
   );
