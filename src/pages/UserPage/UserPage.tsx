@@ -45,7 +45,7 @@ export const UserPage = () => {
 
   useEffect(() => {
     const fetchUser = async (id: string | number) => {
-      const response = await userService.getUser(id);
+      const response = await userService.geUser(id);
       setUser(response);
     }
 

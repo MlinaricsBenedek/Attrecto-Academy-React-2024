@@ -17,7 +17,7 @@ interface UserCardProps {
 }
 
 const UserCard = ({ user, badges, handleDeleteUser }: UserCardProps) => {
-  const { id, image, name, badges: userBadges } = user;
+  const { id, image, name, badges: userBadges = [] } = user;
 
   return (
     <Link to={`/user/${id}`} className={classNames("card", classes.UserCard)}>

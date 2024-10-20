@@ -6,7 +6,7 @@ class UserService {
     return request<UserModel[]>({ method: Methods.GET, resource: "users" });
   }
 
-async getUser(id: string | number){
+async geUser(id: string | number){
   return request<UserModel>({method:Methods.GET,resource:`users/${id}`});
 
 }
