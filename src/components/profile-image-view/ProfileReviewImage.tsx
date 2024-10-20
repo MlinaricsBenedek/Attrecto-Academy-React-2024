@@ -1,10 +1,10 @@
-// components/profile-image-preview/ProfileImagePreview.tsx
+//components/profile-image-preview/ProfileImagePreview.tsx
 import React, { FC } from "react";
 
 interface ProfileImageViewProps{
 imageUrl:string;
 }
-export const ProfileImagePreview=({imageUrl}) => {
+export const ProfileImagePreview=({imageUrl}:ProfileImageViewProps) => {
   return (
     <div>
      
